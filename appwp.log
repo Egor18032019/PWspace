@@ -1,0 +1,257 @@
+2021-11-12 13:01:41 [restartedMain] INFO  com.work.space.SpaceApplication - Starting SpaceApplication using Java 11.0.12 on DESKTOP-3S26PC6 with PID 18680 (C:\Users\Teacher\Documents\GitHub\PWspace\target\classes started by Teacher in C:\Users\Teacher\Documents\GitHub\PWspace)
+2021-11-12 13:01:41 [restartedMain] INFO  com.work.space.SpaceApplication - No active profile set, falling back to default profiles: default
+2021-11-12 13:01:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 13:01:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-12 13:01:47 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3ebae22b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 13:01:47 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-12 13:01:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-12 13:01:49 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-12 13:01:49 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 13:01:49 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-12 13:01:49 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7592 ms
+2021-11-12 13:01:50 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\controller\LoginController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\service\user\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataJpaUserRepository' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\repository\user\DataJpaUserRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.work.space.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-11-12 13:01:50 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-11-12 13:01:50 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-12 13:01:50 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.work.space.repository.user.DataJpaUserRepository required a bean of type 'com.work.space.repository.user.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.work.space.repository.user.UserRepository' in your configuration.
+
+2021-11-12 13:12:05 [restartedMain] INFO  com.work.space.SpaceApplication - Starting SpaceApplication using Java 11.0.12 on DESKTOP-3S26PC6 with PID 11148 (C:\Users\Teacher\Documents\GitHub\PWspace\target\classes started by Teacher in C:\Users\Teacher\Documents\GitHub\PWspace)
+2021-11-12 13:12:05 [restartedMain] INFO  com.work.space.SpaceApplication - No active profile set, falling back to default profiles: default
+2021-11-12 13:12:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 13:12:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-12 13:12:10 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e16ce2a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 13:12:10 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-12 13:12:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-12 13:12:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-12 13:12:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 13:12:11 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-12 13:12:11 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5584 ms
+2021-11-12 13:12:12 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\controller\LoginController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\service\user\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataJpaUserRepository' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\repository\user\DataJpaUserRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.work.space.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-11-12 13:12:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-11-12 13:12:12 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-12 13:12:12 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.work.space.repository.user.DataJpaUserRepository required a bean of type 'com.work.space.repository.user.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.work.space.repository.user.UserRepository' in your configuration.
+
+2021-11-12 13:17:45 [restartedMain] INFO  com.work.space.SpaceApplication - Starting SpaceApplication using Java 11.0.12 on DESKTOP-3S26PC6 with PID 17872 (C:\Users\Teacher\Documents\GitHub\PWspace\target\classes started by Teacher in C:\Users\Teacher\Documents\GitHub\PWspace)
+2021-11-12 13:17:46 [restartedMain] INFO  com.work.space.SpaceApplication - No active profile set, falling back to default profiles: default
+2021-11-12 13:17:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 13:17:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-12 13:17:51 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8518cb97] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 13:17:51 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-12 13:17:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-12 13:17:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-12 13:17:52 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 13:17:53 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-12 13:17:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6824 ms
+2021-11-12 13:17:53 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\controller\LoginController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\service\user\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataJpaUserRepository' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\repository\user\DataJpaUserRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.work.space.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-11-12 13:17:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-11-12 13:17:53 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-12 13:17:53 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.work.space.repository.user.DataJpaUserRepository required a bean of type 'com.work.space.repository.user.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.work.space.repository.user.UserRepository' in your configuration.
+
+2021-11-12 13:20:00 [restartedMain] INFO  com.work.space.SpaceApplication - Starting SpaceApplication using Java 11.0.12 on DESKTOP-3S26PC6 with PID 13272 (C:\Users\Teacher\Documents\GitHub\PWspace\target\classes started by Teacher in C:\Users\Teacher\Documents\GitHub\PWspace)
+2021-11-12 13:20:00 [restartedMain] INFO  com.work.space.SpaceApplication - No active profile set, falling back to default profiles: default
+2021-11-12 13:20:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 13:20:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-12 13:20:05 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6ae88967] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 13:20:05 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-12 13:20:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-12 13:20:06 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-12 13:20:06 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 13:20:07 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-11-12 13:20:07 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-12 13:20:07 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6239 ms
+2021-11-12 13:20:07 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\controller\LoginController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\service\user\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataJpaUserRepository' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\repository\user\DataJpaUserRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.work.space.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-11-12 13:20:07 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-11-12 13:20:07 [restartedMain] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - Failed to destroy the filter named [Tomcat WebSocket (JSR356) Filter] of type [org.apache.tomcat.websocket.server.WsFilter]
+java.lang.AbstractMethodError: Receiver class org.apache.tomcat.websocket.server.WsFilter does not define or inherit an implementation of the resolved method 'abstract void destroy()' of interface javax.servlet.Filter.
+	at org.apache.catalina.core.ApplicationFilterConfig.release(ApplicationFilterConfig.java:301)
+	at org.apache.catalina.core.StandardContext.filterStop(StandardContext.java:4647)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5469)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:496)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:273)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:331)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:150)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.work.space.SpaceApplication.main(SpaceApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-11-12 13:20:07 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-12 13:20:07 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.work.space.repository.user.DataJpaUserRepository required a bean of type 'com.work.space.repository.user.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.work.space.repository.user.UserRepository' in your configuration.
+
+2021-11-12 13:25:35 [restartedMain] INFO  com.work.space.SpaceApplication - Starting SpaceApplication using Java 11.0.12 on DESKTOP-3S26PC6 with PID 8196 (C:\Users\Teacher\Documents\GitHub\PWspace\target\classes started by Teacher in C:\Users\Teacher\Documents\GitHub\PWspace)
+2021-11-12 13:25:35 [restartedMain] INFO  com.work.space.SpaceApplication - No active profile set, falling back to default profiles: default
+2021-11-12 13:25:35 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 13:25:35 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-12 13:25:38 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f6f677ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 13:25:38 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-12 13:25:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-12 13:25:40 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-12 13:25:40 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 13:25:40 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-12 13:25:40 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4989 ms
+2021-11-12 13:25:40 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\controller\LoginController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\service\user\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataJpaUserRepository' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\repository\user\DataJpaUserRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.work.space.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-11-12 13:25:40 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-11-12 13:25:40 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-12 13:25:40 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.work.space.repository.user.DataJpaUserRepository required a bean of type 'com.work.space.repository.user.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.work.space.repository.user.UserRepository' in your configuration.
+
+2021-11-12 14:55:11 [restartedMain] INFO  com.work.space.SpaceApplication - Starting SpaceApplication using Java 11.0.12 on DESKTOP-3S26PC6 with PID 1480 (C:\Users\Teacher\Documents\GitHub\PWspace\target\classes started by Teacher in C:\Users\Teacher\Documents\GitHub\PWspace)
+2021-11-12 14:55:11 [restartedMain] INFO  com.work.space.SpaceApplication - No active profile set, falling back to default profiles: default
+2021-11-12 14:55:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 14:55:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-12 14:55:14 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ed7ebcc3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 14:55:14 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-12 14:55:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-12 14:55:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-12 14:55:16 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 14:55:16 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-12 14:55:16 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5184 ms
+2021-11-12 14:55:16 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\controller\LoginController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\service\user\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataJpaUserRepository' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\repository\user\DataJpaUserRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.work.space.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-11-12 14:55:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-11-12 14:55:16 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-12 14:55:17 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.work.space.repository.user.DataJpaUserRepository required a bean of type 'com.work.space.repository.user.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.work.space.repository.user.UserRepository' in your configuration.
+
+2021-11-12 14:56:07 [restartedMain] INFO  com.work.space.SpaceApplication - Starting SpaceApplication using Java 11.0.12 on DESKTOP-3S26PC6 with PID 15576 (C:\Users\Teacher\Documents\GitHub\PWspace\target\classes started by Teacher in C:\Users\Teacher\Documents\GitHub\PWspace)
+2021-11-12 14:56:07 [restartedMain] INFO  com.work.space.SpaceApplication - No active profile set, falling back to default profiles: default
+2021-11-12 14:56:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 14:56:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-12 14:56:10 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a8ec41ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 14:56:11 [restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-12 14:56:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-11-12 14:56:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-12 14:56:12 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 14:56:13 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-12 14:56:13 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5664 ms
+2021-11-12 14:56:13 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\controller\LoginController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\service\user\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataJpaUserRepository' defined in file [C:\Users\Teacher\Documents\GitHub\PWspace\target\classes\com\work\space\repository\user\DataJpaUserRepository.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.work.space.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-11-12 14:56:13 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-11-12 14:56:13 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-12 14:56:13 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.work.space.repository.user.DataJpaUserRepository required a bean of type 'com.work.space.repository.user.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.work.space.repository.user.UserRepository' in your configuration.
+
