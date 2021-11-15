@@ -2,31 +2,24 @@ package com.work.space.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import com.work.space.config.handler.CustomAuthenticationFailureHandler;
 import com.work.space.config.handler.MySimpleUrlAuthenticationSuccessHandler;
 import com.work.space.service.OtpAuthenticationProvider;
 import com.work.space.service.user.UserService;
 import com.work.space.util.JsonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.annotation.PostConstruct;
 
-@Configuration
+//@Configuration
 @EnableWebSecurity
-//@ComponentScan(basePackages ="com.work.space")
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements WebMvcConfigurer {
 
     private final MySimpleUrlAuthenticationSuccessHandler authenticationSuccessHandler;
@@ -45,44 +38,23 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements W
 
 
 
-    @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
 
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         System.out.println("! configure configure configure");
         httpSecurity
+                .csrf().disable()
                 .authorizeRequests()
-
                  .antMatchers("/onetimecode").not().authenticated()
                 .antMatchers("/version").permitAll()
-                .and()
-                // Настройка для входа в систему
-                .formLogin()
+                .anyRequest().fullyAuthenticated();
 
-                .loginPage("/login")
-                .successHandler(authenticationSuccessHandler)
-                .failureHandler(new CustomAuthenticationFailureHandler())
-                .and()
-                .logout()
-                .permitAll().logoutSuccessUrl("/")
-                .and()
-                .logout().permitAll()
-                .and()
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
-                .and()
-                .csrf().disable()
-                .cors()
-                .and().exceptionHandling().authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
-        ;
-
-
-      httpSecurity.exceptionHandling()
-                .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED));
     }
 
+    @Bean
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) {

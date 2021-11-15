@@ -2,7 +2,7 @@ package com.work.space.service.user;
 
 
 import com.work.space.entity.User;
-import com.work.space.repository.CompanyRepository;
+import com.work.space.repository.company.CompanyRepository;
 import com.work.space.repository.user.CrudUserRepository;
 import com.work.space.service.OtpService;
 import com.work.space.to.AuthorizedUser;

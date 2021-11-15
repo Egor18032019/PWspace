@@ -2,17 +2,17 @@ package com.work.space.repository.user;
 
 import com.work.space.entity.User;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
 public class DataJpaUserRepository implements CrudUserRepository {
+    private final UserRepositoryClass userRepository;
 
-    private final UserRepository userRepository;
+    public DataJpaUserRepository(
 
-    public DataJpaUserRepository(UserRepository userRepository) {
+            UserRepositoryClass userRepository) {
 
         this.userRepository = userRepository;
     }
